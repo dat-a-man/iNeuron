@@ -1,0 +1,5 @@
+Hi, for Linux these are the steps listed below.
+Go on to your terminal                  
+1. docker ps - To list running docker containers
+2. docker pull cloudera/quickstart:latest - To pull docker image from repository
+3. docker run --hostname=quickstart.cloudera --privileged=true -t -i -v ~/Documents/dockersrc:/Src --publish-all=true -p 8888 cloudera/quickstart /usr/bin/docker-quickstart
